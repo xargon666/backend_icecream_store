@@ -16,6 +16,7 @@ app.listen(port, () => {
     console.log(`Listening on http://localhost:${port}`)
 });
 
-// const cors = require('cors'); 
-// app.use(express.json())
-// app.use(cors());
+// CORS stuff - elminates errors in cases I don't understand yet
+const cors = require('cors'); 
+app.use(express.json())
+app.use(cors());
